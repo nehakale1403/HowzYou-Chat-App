@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HowzYou</string>
+    <string name="create_act_button">create a new account</string>
+    <string name="create_act">Create Account</string>
+    <string name="log_out">Log Out</string>
+    <string name="welcome_msg">Welcome to HowzYou :)</string>
+    <string name="login_actMsg">Login to your Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_image">Change Image</string>
+    <string name="change_status">Change Status</string>
+    <string name="hey_there_i_m_using_howzyou">Hey there! I\'m using HowzYou</string>
+    <string name="display_name">Display Name</string>
+    <string name="update_status">Update Status</string>
+    <string name="current_user_status">Current User Status</string>
+    <string name="total_friends">Total Friends</string>
+</resources>

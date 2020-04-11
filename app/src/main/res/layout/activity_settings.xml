@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:backgroundTint="@color/colorPrimary"
+    tools:context=".SettingsActivity">
+
+    <Button
+        android:id="@+id/changeStatusButtonID"
+        android:layout_width="201dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/change_status"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/displayImageID"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/addimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <Button
+        android:id="@+id/changeImageButtonID"
+        android:layout_width="197dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:text="@string/change_image"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/settingsDisplayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display_name"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/changeImageButtonID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayImageID"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <TextView
+        android:id="@+id/settingStatusID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hey_there_i_m_using_howzyou"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/changeImageButtonID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsDisplayName"
+        app:layout_constraintVertical_bias="0.121" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

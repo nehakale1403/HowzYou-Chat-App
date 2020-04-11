@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userSingleImageview"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/addimage" />
+
+    <TextView
+        android:id="@+id/userNameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/userSingleImageview"
+        android:paddingLeft="5dp"
+        android:text="@string/display_name"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/userStatusID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameID"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/userSingleImageview"
+        android:paddingLeft="5dp"
+        android:text="User default status" />
+
+    <ImageView
+        android:id="@+id/usersSingleOnlineIcon"
+        android:layout_width="21dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/userNameID"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/greendot1" />
+
+</RelativeLayout>
